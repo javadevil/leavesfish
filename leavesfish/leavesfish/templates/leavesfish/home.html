@@ -1,0 +1,20 @@
+{% extends "leavesfish/material_base.html" %}
+{% load staticfiles %}
+{% block body %}
+<div ng-controller="AppCtrl" layout="column" layout-fill>
+	<md-toolbar layout="row">
+		<md-button style="min-width:64px;">
+			<md-icon md-svg-src="{% static "bower/bower_components/material-design-icons/navigation/svg/production/ic_menu_24px.svg" %}"></md-icon>
+		</md-button>
+		
+		<h1 class="md-toolbar-tools" flex>LeavesFISH</h1>
+	</md-toolbar>
+</div>
+{% endblock %}
+{% block script %}
+<script>
+var control = app.controller('AppCtrl',['$scope',function($scope){
+	
+}]);
+</script>
+{% endblock %}
